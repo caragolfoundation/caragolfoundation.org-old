@@ -12,7 +12,9 @@
     "astro": "astro",
     "pull:components": "npx storyblok pull-components --space 297817",
     "generate:types": "npx storyblok generate-typescript-typedefs --sourceFilePaths ./components.297817.json --destinationFilePath ./component-types-sb.d.ts",
-    "upgrade": "npx npm-check-updates -u && npm install"
+    "upgrade": "npx npm-check-updates -u && npm install",
+    "deploy-preview": "astro check && astro build && netlify deploy --site caragolfoundation",
+    "deploy": "astro check && astro build && netlify deploy --site caragolfoundation --prod"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -61,6 +63,7 @@
   "devDependencies": {
     "@types/mailchimp__mailchimp_marketing": "^3.0.20",
     "@vitejs/plugin-basic-ssl": "^1.2.0",
+    "netlify-cli": "^18.0.3",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.9"
