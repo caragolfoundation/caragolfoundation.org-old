@@ -7,15 +7,15 @@ import vue from "@astrojs/vue";
 import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 import netlify from "@astrojs/netlify";
-import vercel from "@astrojs/vercel"; 
+// import vercel from "@astrojs/vercel"; 
 
 const env = loadEnv("", process.cwd(), ["STORYBLOK", "NETLIFY"]);
  
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astrogency.unfolding.io/", // change this to your domain
+  site: "https://caragolfoundation.org/", // change this to your domain
 
-  adapter: env.NETLIFY ? netlify() : vercel(), // vercel() or netlify()
+  adapter: netlify(), // vercel() or netlify()
   integrations: [
     storyblok({
       accessToken: env.STORYBLOK_PREVIEW_TOKEN,
@@ -141,7 +141,7 @@ export default defineConfig({
       STORYBLOK_REGION: envField.string({
         context: "server",
         access: "public",
-        default: "eu", // Possible values: "ap", "eu", "us", "ca", "cn" (Default: "eu")
+        default: "us", // Possible values: "ap", "eu", "us", "ca", "cn" (Default: "eu")
       }),
       STORYBLOK_PERSONAL_TOKEN: envField.string({
         context: "server",
