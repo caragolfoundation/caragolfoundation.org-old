@@ -58,9 +58,9 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.13.6",
-    "@types/react": "^18.0.37",
+    "@types/react": "^19.0.8",
     "@types/react-dom": "^18.2.6",
-    "react": "^18.2.0",
+    "react": "^19.0.0",
     "react-dom": "^18.2.0",
     "react-photo-album": "^2.0.4"
   }
