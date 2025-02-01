@@ -1,0 +1,207 @@
+---
+import { SITE_LANG } from "astro:env/client";
+import { getEntry, getCollection } from "astro:content";
+import { translateUrl, useTranslations } from "@lib/translate";
+import { renderRichText } from "@storyblok/astro";
+import Layout from "@layouts/Layout.astro";
+import PostCard from "@components/cards/PostCard.astro";
+import Link from "@components/navigation/Link.astro";
+import Breadcrumbs from "@components/helpers/Breadcrumbs.astro"; 
+
+
+export async function getStaticPaths({ paginate }: { paginate: Function }) {
+  const pageSize = 10;
+  const locales = (await getCollection("locales")).map((locale) => locale.id);
+
+  const pages = locales.flatMap(async (lang, index) => {
+    const routeLang = index === 0 ? undefined : lang;
+    const status = import.meta.env.DEV ? "draft" : "published";
+
+    const [posts, categories, settings] = await Promise.all([
+      getCollection("work", ({ data }) => data.lang === lang),
+      getCollection("work_category", ({ data }) => data.lang === lang),
+      getEntry("settings", lang),
+    ]);
+
+    if (!settings) {
+      console.log("settings not found");
+      return Astro.redirect("/setup");
+    }
+
+    const postsData = posts.map((post) => post.data);
+    const categoriesData = categories.map((category) => category.data);
+    const settingsData = settings.data;
+
+    const indexPages = paginate(postsData, { pageSize });
+
+    // Group posts by category
+    const groupedByCategory = postsData.reduce(
+      (acc: Record<string, typeof postsData>, post) => {
+        post.category?.forEach((categoryId: string) => {
+          acc[categoryId] = acc[categoryId] || [];
+          acc[categoryId].push(post);
+        });
+        return acc;
+      },
+      {}
+    );
+
+    // Generate category pages
+    const categoryPages = Object.entries(groupedByCategory).flatMap(
+      ([categoryId, posts]) => {
+        const category = categoriesData.find((cat) => cat.uuid === categoryId);
+        if (!category) return [];
+
+        return paginate(posts, { pageSize }).map((page: any) => ({
+          params: {
+            page: page.params.page,
+            category: category.slug,
+            lang: routeLang,
+          },
+          props: {
+            ...page.props,
+            status,
+            settings: settingsData,
+            locales,
+            categories: categoriesData,
+            category,
+          },
+        }));
+      }
+    );
+
+    // Generate base pages
+    const basePages = indexPages.map((page: any) => ({
+      params: {
+        page: page.params.page,
+        category: undefined,
+        lang: routeLang,
+      },
+      props: {
+        ...page.props,
+        status,
+        settings: settingsData,
+        locales,
+        categories: categoriesData,
+      },
+    }));
+
+    return [...basePages, ...categoryPages];
+  });
+
+  const routes = await Promise.all(pages);
+  return routes.flat();
+}
+
+const { lang } = Astro.params;
+const { page, settings, locales, categories, category } = Astro.props;
+const pageLang = lang || SITE_LANG;
+const t = useTranslations(pageLang);
+
+const { next, prev } = page.url;
+const {
+  work_title,
+  work_content,
+  work_og_title,
+  work_og_description,
+  work_og_image,
+  surface_page,
+} = settings;
+
+const localeUrls = translateUrl(Astro.url, locales);
+
+const meta = {
+  title: category?.og_title || work_og_title,
+  description: category?.og_description || work_og_description,
+  image: category?.og_image?.filename || work_og_image?.filename,
+};
+
+// Pre-calculate wide image indices for better performance
+const wideImages = new Set([
+  1, 4, 5, 8, 9, 12, 13, 16, 17, 20, 21, 24, 25, 28, 29, 32, 33, 36, 37, 40, 41,
+  44, 45, 48, 49, 52, 53, 56, 57, 60, 61, 64, 65, 68, 69, 72, 73, 76, 77, 80,
+  81, 84, 85, 88, 89, 92, 93, 96, 97, 100,
+]);
+
+const category_title = category?.page_title || category?.title;
+
+if (!meta.title || !meta.description || !meta.image)
+  return Astro.redirect("/404");
+---
+
+<Layout {meta} {settings} {localeUrls}>
+  <section class={surface_page || ""}>
+    <div class="content-grid min-h-svh content-start">
+      <div class="mx-w-lg breakout grid h-fit gap-3 pt-20">
+        <div class="grid grid-cols-1 gap-2">
+          <Breadcrumbs />
+          <h1
+            class="text-balance text-5xl md:text-6xl"
+            set:html={category_title || work_title}
+          />
+          <div
+            class="richtext no-lead text-balance"
+            set:html={renderRichText(
+              category ? category.content : work_content
+            )}
+          />
+        </div>
+        {
+          categories?.length > 0 && (
+            <div class="mt-1 flex w-fit flex-wrap justify-start gap-4 border-t border-current py-4">
+              {categories.map((cat: WorkCategoryStoryblok) => (
+                <Link
+                  className={`btn-underline text-sm ${cat?.slug === category?.slug ? "text-primary" : ""}`}
+                  blok={{
+                    href: { url: `/work/${cat.slug}` },
+                    label: cat?.title,
+                  }}
+                />
+              ))}
+            </div>
+          )
+        }
+      </div>
+
+      <div
+        class="breakout grid grid-cols-1 gap-4 py-4 md:grid-cols-2 md:gap-8 xl:grid-cols-3"
+      >
+        {
+          page.data.map((story:WorkData, index: number) => (
+            <PostCard
+              {...story}
+              wide={wideImages.has(index + 1)}
+              showCategory={!category}
+              categories={categories}
+            />
+          ))
+        }
+      </div>
+
+      <div class="breakout mt-auto pb-8 pt-14">
+        <div class="flex justify-end gap-4">
+          {
+            prev && (
+              <Link
+                blok={{
+                  href: { url: lang ? `/${lang}${prev}` : prev },
+                  label: t("previous"),
+                }}
+              />
+            )
+          }
+          {
+            next && (
+              <Link
+                blok={{
+                  href: { url: lang ? `/${lang}${next}` : next },
+                  label: t("next"),
+                }}
+              />
+            )
+          }
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

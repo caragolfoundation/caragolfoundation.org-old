@@ -1,0 +1,75 @@
+---
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+import Layout from "@layouts/Layout.astro";
+import { translateUrl } from "@lib/translate";
+import { SITE_LANG } from "astro:env/client";
+import { getEntry, getCollection } from "astro:content";
+import { collectionToRoutes } from "@lib/storyblokApi";
+import type { SbBlokData } from "@storyblok/js/";
+export async function getStaticPaths() {
+  try {
+    const collections = await Promise.all([
+      getCollection("page"),
+      getCollection("post"), 
+      getCollection("work"),
+      getCollection("service")
+    ]);
+
+    const routes = await collectionToRoutes(collections.flat());
+    return routes;
+
+  } catch (error) {
+    console.error("Failed to generate static paths:", error);
+    return [{
+      params: { slug: undefined },
+      props: { lang: SITE_LANG, id: "404" }
+    }];
+  }
+}
+
+interface Props {
+  lang: string;
+  id: string;
+  component: "post" | "page" | "work" | "service";
+}
+
+const { lang, id, component } = Astro.props;
+
+if (!id || !component) {
+  return Astro.redirect("/404");
+}
+
+const [settingsEntry, localesCollection, storyEntry] = await Promise.all([
+  getEntry("settings", lang),
+  getCollection("locales"),
+  getEntry(component, id)
+]);
+
+const settings = settingsEntry?.data ?? null;
+const locales = localesCollection.map(item => item.id);
+const story = storyEntry?.data ?? null;
+
+
+if (!settings) {
+  console.log("settings not found");
+  return Astro.redirect("/setup");
+}
+
+if (!story) {
+  return Astro.redirect("/404"); 
+}
+
+const status = import.meta.env.DEV ? "draft" : "published";
+const localeUrls = translateUrl(Astro.url, locales || [SITE_LANG]);
+
+const meta = {
+  title: story.og_title || "404",
+  description: story.og_description || "page not found",
+  og_image: "",
+  image: story.og_image?.filename || ""
+};
+---
+
+<Layout meta={meta} settings={settings} localeUrls={localeUrls}>
+  <StoryblokComponent blok={story as SbBlokData} {...Astro.props} status={status} />
+</Layout>

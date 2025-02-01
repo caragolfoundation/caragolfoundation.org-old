@@ -1,0 +1,1022 @@
+[
+  {
+    "name": "Services",
+    "group_id": "fb295a50-3553-4531-9f34-560e6e9a835b",
+    "alternates": [],
+    "tag_list": [],
+    "is_folder": false,
+    "content": {
+      "body": [
+        {
+          "align": "",
+          "links": [
+            {
+              "href": {
+                "url": "#contact",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "#contact"
+              },
+              "icon": "lucide:mail",
+              "label": "Contact Us",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            }
+          ],
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 1 },
+                "content": [
+                  {
+                    "text": "Comprehensive Creative Solutions for Your Brand",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Our agency provides a full suite of design and development services to elevate your digital presence. From custom websites and branding to unique illustrations and seamless hosting, we're here to bring your vision to life.",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  },
+                  { "text": " ", "type": "text" }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Whether you're a startup or an established business, we deliver tailored solutions that help you stand out and grow in today's competitive landscape.",
+                    "type": "text"
+                  }
+                ]
+              },
+              { "type": "paragraph" }
+            ]
+          },
+          "surface": "",
+          "component": "richtext",
+          "container": "breakout",
+          "padding_top": "pt-2xl",
+          "padding_bottom": "pb-lg"
+        },
+        {
+          "items": [],
+          "content": { "type": "doc", "content": [{ "type": "paragraph" }] },
+          "surface": "",
+          "component": "services",
+          "container": "breakout",
+          "max_items": "100",
+          "breadcrumb": true,
+          "padding_top": "pt-md",
+          "padding_bottom": "pb-lg"
+        },
+        {
+          "align": "",
+          "image": {
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/297817/1080x1080/bdb88b128a/helpdesk_2.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "links": [
+            {
+              "href": {
+                "url": "#contact",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "#contact"
+              },
+              "icon": "",
+              "label": "Lets have a chat",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            }
+          ],
+          "video": {
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 2 },
+                "content": [
+                  {
+                    "text": "Let's Build Something Exceptional Together",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Whether you need a fresh website, a bold new brand identity, or reliable hosting, our team is ready to bring your project to life. Ready to take the next step?",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "reverse": true,
+          "surface": "surface-secondary",
+          "component": "text_media",
+          "container": "breakout",
+          "media_width": "33.33",
+          "padding_top": "pt-lg",
+          "aspect_ratio": "1",
+          "padding_bottom": "pb-lg"
+        }
+      ],
+      "surface": "",
+      "og_image": {
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/297817/2688x1536/7f5f88d387/speed.jpeg",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_private": false,
+        "is_external_url": false
+      },
+      "og_title": "Services",
+      "component": "page",
+      "og_description": "our services"
+    },
+    "published": true,
+    "slug": "services",
+    "path": null,
+    "full_slug": "services/",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "parent": {
+      "name": "Services",
+      "slug": "services",
+      "disble_fe_editor": false
+    },
+    "is_startpage": true,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "5a23864ccc7a4393b461c14bdd8850c13577f160",
+      "timestamp": "1730538492"
+    },
+    "pinned": false,
+    "breadcrumbs": [
+      {
+        "name": "Services",
+        "path": null,
+        "slug": "services",
+        "translated_slugs": []
+      }
+    ],
+    "publish_at": null,
+    "expire_at": null,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [
+      { "path": "services/", "name": null, "lang": "nl", "published": null }
+    ],
+    "position": -20,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "stage": null,
+    "favourite_for_user_ids": []
+  },
+  {
+    "name": "index",
+    "group_id": "67c219c5-499b-4550-895e-3ecd3c294319",
+    "alternates": [],
+    "tag_list": [],
+    "is_folder": false,
+    "content": {
+      "body": [
+        {
+          "links": [
+            {
+              "href": {
+                "url": "#features-of-astrogency",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "#features-of-astrogency"
+              },
+              "icon": "lucide:arrow-down",
+              "label": "More Info",
+              "surface": "surface-primary",
+              "component": "link"
+            }
+          ],
+          "title": "<b>A</b>STRO<b>GENCY,</b> THE ASTRO TEMPLATE FOR YOUR <b>AGENCY.</b>",
+          "video": {
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Congrats! you are now ready to launch your agency website with Astrogency. This template is designed to help you create a professional online presence with ease.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "surface": "surface-light",
+          "component": "hero",
+          "thumbnail": {
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "filename": null,
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "bg_opacity": "opacity-50",
+          "accent_color": "--primary-bg",
+          "content__i18n__nl": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "We weten dat je een verhaal te vertellen hebt, dit thema maakt het makkelijk om dat te doen. Met een super vriendelijk CMS kun je content in no-time creëren, updaten en stylen.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "align": "text-left mr-auto justify-items-start",
+          "items": [
+            {
+              "icon": "lucide:boxes",
+              "links": [],
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": { "level": 3 },
+                    "content": [
+                      { "text": "Storyblok CMS + Astro", "type": "text" }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Empower your content with a dynamic page builder and intuitive visual editor.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "feature_item"
+            },
+            {
+              "icon": "lucide:circle-check-big",
+              "links": [],
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": { "level": 3 },
+                    "content": [
+                      { "text": "Sustaineble Website (A+)", "type": "text" }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Designed for the planet, boasting a low carbon footprint of approximately 0.07g CO₂ per view.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "feature_item"
+            },
+            {
+              "icon": "fonts",
+              "links": [],
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": { "level": 3 },
+                    "content": [{ "text": "Easy to Style", "type": "text" }]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Customize fonts, colors & radius effortlessly in just a few clicks.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "feature_item"
+            },
+            {
+              "icon": "lucide:laptop",
+              "links": [],
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": { "level": 3 },
+                    "content": [
+                      { "text": "Multi-Language Support", "type": "text" }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Easily integrate the languages you need for global reach.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "feature_item"
+            },
+            {
+              "icon": "lucide:smartphone",
+              "links": [],
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": { "level": 3 },
+                    "content": [
+                      { "text": "Green Lighthouse Score", "type": "text" }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Enjoy lightning-fast loading times with a mobile page speed score of 98% to 100%.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "feature_item"
+            },
+            {
+              "icon": "lucide:navigation",
+              "links": [],
+              "content": {
+                "type": "doc",
+                "content": [
+                  {
+                    "type": "heading",
+                    "attrs": { "level": 3 },
+                    "content": [
+                      {
+                        "text": "Complete Collections for Your Agency",
+                        "type": "text"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "paragraph",
+                    "content": [
+                      {
+                        "text": "Create an SEO-optimized site with pages, posts, services, and portfolio collections.",
+                        "type": "text"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "component": "feature_item"
+            }
+          ],
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 2 },
+                "content": [
+                  { "text": "Features of Astrogency", "type": "text" }
+                ]
+              }
+            ]
+          },
+          "surface": "surface-muted",
+          "component": "features",
+          "container": "breakout",
+          "padding_top": "pt-xl",
+          "accent_surface": "surface-primary",
+          "padding_bottom": "pb-xl"
+        },
+        {
+          "align": "",
+          "image": {
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/297817/512x512/eccc950311/toolbox.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "links": [
+            {
+              "href": {
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "blog/getting-started"
+              },
+              "icon": "lucide:arrow-right",
+              "label": "Read More",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            },
+            {
+              "href": {
+                "url": "#",
+                "target": "_blank",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "#"
+              },
+              "icon": "lucide:github",
+              "label": "GitHiub",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            }
+          ],
+          "video": {
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 3 },
+                "content": [
+                  { "text": "Get Started with Astrogency", "type": "text" }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Setting up your Astrogency template is quick and easy! Follow our comprehensive guide to install and deploy your new website in no time.",
+                    "type": "text"
+                  }
+                ]
+              }
+            ]
+          },
+          "reverse": true,
+          "surface": "",
+          "component": "text_media",
+          "container": "breakout",
+          "media_width": "50",
+          "padding_top": "pt-lg",
+          "aspect_ratio": "1.25",
+          "padding_bottom": "pb-lg"
+        },
+        {
+          "align": "",
+          "image": {
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/297817/512x512/98921c83aa/design-illustration.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "links": [
+            {
+              "href": {
+                "url": "",
+                "linktype": "story",
+                "fieldtype": "multilink",
+                "cached_url": "about-astrogency"
+              },
+              "icon": "lucide:arrow-right",
+              "label": "More info",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            }
+          ],
+          "video": {
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 3 },
+                "content": [{ "text": "About Astrogency", "type": "text" }]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Astrogency is a versatile and modern template designed for creative agencies and freelancers. This template is built with performance and ease of use in mind, making it ideal for anyone looking to establish a professional online presence.",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "bullet_list",
+                "content": [
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "License: ",
+                            "type": "text",
+                            "marks": [{ "type": "bold" }]
+                          },
+                          { "text": "CC BY-ND 4.0", "type": "text" }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "list_item",
+                    "content": [
+                      {
+                        "type": "paragraph",
+                        "content": [
+                          {
+                            "text": "Commercial Use",
+                            "type": "text",
+                            "marks": [{ "type": "bold" }]
+                          },
+                          {
+                            "text": ": Ready for use in commercial projects!",
+                            "type": "text"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              { "type": "paragraph" }
+            ]
+          },
+          "reverse": false,
+          "surface": "",
+          "component": "text_media",
+          "container": "breakout",
+          "media_width": "50",
+          "padding_top": "pt-lg",
+          "aspect_ratio": "1.25",
+          "padding_bottom": "pb-lg"
+        },
+        {
+          "align": "text-center mx-auto justify-items-center",
+          "image": {
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/297817/1994x1980/239eee3df3/vide0-bg.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "links": [],
+          "video": {
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/297817/x/b366ac4426/bg-video-water-web-2.mp4",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+          },
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 3 },
+                "content": [
+                  {
+                    "text": "Built for Performance and Sustainability",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Astrogency is designed with the planet in mind. Our site is energy-efficient and has earned an A+ energy label, producing approximately ",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  },
+                  {
+                    "text": "0.07g CO",
+                    "type": "text",
+                    "marks": [
+                      { "type": "bold" },
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  },
+                  {
+                    "text": "2",
+                    "type": "text",
+                    "marks": [
+                      { "type": "bold" },
+                      { "type": "styled", "attrs": { "class": "lead" } },
+                      { "type": "superscript" }
+                    ]
+                  },
+                  {
+                    "text": " ",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } },
+                      { "type": "superscript" }
+                    ]
+                  },
+                  {
+                    "text": "per page view.",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Modern Font Stack: ",
+                    "type": "text",
+                    "marks": [
+                      { "type": "bold" },
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  },
+                  {
+                    "text": "We use system fonts to reduce page load times and eliminate content shifts, ensuring a smooth and fast experience.",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Optimized Images: ",
+                    "type": "text",
+                    "marks": [
+                      { "type": "bold" },
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  },
+                  {
+                    "text": "All images are compressed and optimized without sacrificing quality, contributing to lower carbon emissions and faster load times.",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "With Astrogency, you're not just getting a high-performance website—you're also making a positive impact on the environment.",
+                    "type": "text",
+                    "marks": [
+                      { "type": "styled", "attrs": { "class": "lead" } }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "opacity": "opacity-30",
+          "surface": "",
+          "component": "banner",
+          "container": "breakout",
+          "padding_top": "",
+          "padding_bottom": "",
+          "surface_banner": "surface-dark"
+        },
+        {
+          "items": [
+            "8927f345-85b9-451a-9137-7b93ba983db4",
+            "2bcdaa0f-cc9f-47de-aa25-96eb7308ec75",
+            "e96ca558-68a6-48fe-9bed-1fe2d0587b7d"
+          ],
+          "title": "Recent news",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 2 },
+                "content": [{ "text": "Latest work", "type": "text" }]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "Here demo work links from your agency. ",
+                    "type": "text"
+                  },
+                  {
+                    "text": "See all",
+                    "type": "text",
+                    "marks": [
+                      {
+                        "type": "link",
+                        "attrs": {
+                          "href": "/work/",
+                          "uuid": null,
+                          "anchor": null,
+                          "target": "_self",
+                          "linktype": "url"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "surface": "",
+          "category": "",
+          "component": "blog_and_work_items",
+          "container": "breakout",
+          "max_items": "6",
+          "padding_top": "pt-lg",
+          "padding_bottom": "pb-lg"
+        },
+        {
+          "crop": false,
+          "align": "",
+          "image": {
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/297817/1080x1080/b75fdd3684/helpdesk_1.png",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {
+              "alt": "",
+              "title": "",
+              "source": "",
+              "copyright": ""
+            },
+            "is_external_url": false
+          },
+          "links": [
+            {
+              "href": {
+                "url": "#contact",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "#contact"
+              },
+              "icon": "",
+              "label": "Lets have a chat",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            },
+            {
+              "href": {
+                "url": "https://unfolding.io/services/kickstart-your-astro-project/",
+                "target": "_blank",
+                "linktype": "url",
+                "fieldtype": "multilink",
+                "cached_url": "https://unfolding.io/services/kickstart-your-astro-project/"
+              },
+              "icon": "lucide:external-link",
+              "label": "Kick start your project",
+              "surface": "",
+              "component": "link",
+              "hide_label": false
+            }
+          ],
+          "video": {
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+          },
+          "layout": "",
+          "content": {
+            "type": "doc",
+            "content": [
+              {
+                "type": "heading",
+                "attrs": { "level": 2 },
+                "content": [
+                  {
+                    "text": "Need Help with getting your Astrogency website live?",
+                    "type": "text"
+                  }
+                ]
+              },
+              {
+                "type": "paragraph",
+                "content": [
+                  {
+                    "text": "If you're unsure about the setup or need assistance installing and deploying the theme, we've got you covered. Our team is ready to help you get up and running quickly.",
+                    "type": "text"
+                  }
+                ]
+              },
+              { "type": "paragraph" }
+            ]
+          },
+          "reverse": true,
+          "surface": "surface-secondary",
+          "component": "text_media",
+          "container": "breakout",
+          "media_width": "33.33",
+          "padding_top": "pt-lg",
+          "aspect_ratio": "1",
+          "padding_bottom": "pb-lg"
+        }
+      ],
+      "surface": "",
+      "og_image": {
+        "alt": "",
+        "name": "",
+        "focus": "",
+        "title": "",
+        "source": "",
+        "filename": "https://a.storyblok.com/f/297817/1280x1917/4ead0260f6/yuor-logo-here.png",
+        "copyright": "",
+        "fieldtype": "asset",
+        "meta_data": {},
+        "is_private": false,
+        "is_external_url": false
+      },
+      "og_title": "Astrogency",
+      "component": "page",
+      "og_description": "the agency astro temple"
+    },
+    "published": true,
+    "slug": "index",
+    "path": null,
+    "full_slug": "index",
+    "default_root": null,
+    "disble_fe_editor": false,
+    "parent": null,
+    "is_startpage": false,
+    "unpublished_changes": false,
+    "meta_data": null,
+    "imported_at": null,
+    "preview_token": {
+      "token": "38f984906a81a8cf1a7a33e733324fbf0d1c95f1",
+      "timestamp": "1730538498"
+    },
+    "pinned": false,
+    "breadcrumbs": [],
+    "publish_at": null,
+    "expire_at": null,
+    "first_published_at": "2024-07-21T12:19:23.762Z",
+    "last_author": {
+      "id": 68956,
+      "userid": "hello@unfolding.io",
+      "friendly_name": "hello@unfolding.io"
+    },
+    "last_author_id": 68956,
+    "user_ids": [],
+    "space_role_ids": [],
+    "translated_slugs": [],
+    "localized_paths": [
+      { "path": "index", "name": null, "lang": "nl", "published": null }
+    ],
+    "position": 10,
+    "translated_stories": [],
+    "can_not_view": false,
+    "is_scheduled": null,
+    "scheduled_dates": null,
+    "ideas": [],
+    "stage": null,
+    "favourite_for_user_ids": []
+  }
+]

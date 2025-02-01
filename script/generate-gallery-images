@@ -1,3 +1,0 @@
-#!/bin/bash
-
-node script/js/generate-gallery-images.js

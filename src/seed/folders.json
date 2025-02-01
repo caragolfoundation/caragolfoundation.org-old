@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Blog",
+    "parent_id": 0,
+    "is_folder": true,
+   "content": {
+      "content_types": ["post", "page"],
+      "lock_subfolders_content_types": false
+    },
+    "slug": "blog",
+    "default_root": "post"
+    
+  },
+  {
+    "name": "Work", 
+    "parent_id": 0,
+    "is_folder": true,
+    "content": {
+      "content_types": ["work"],
+      "lock_subfolders_content_types": false
+    },
+    "slug": "work",
+    "default_root": "work"
+  },
+  {
+    "name": "Services",
+    "parent_id": 0,
+    "is_folder": true,
+    "content": {
+      "content_types": ["service", "page"],
+      "lock_subfolders_content_types": false
+    },
+    "slug": "services",
+    "default_root": "service"
+  },
+  {
+    "name": "Site Settings",
+    "parent_id": 0,
+    "is_folder": true,
+    "content": {
+      "content_types": ["page", "settings","contact_topics", "work_category", "blog_category","stack"],
+      "lock_subfolders_content_types": false
+    },
+    "slug": "site-settings",
+    "default_root": "page",
+    "disble_fe_editor": true
+  }
+]
